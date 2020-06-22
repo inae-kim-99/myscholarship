@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "440435878453",
+    "firebase_url": "https://myscholarship-62ea1.firebaseio.com",
+    "project_id": "myscholarship-62ea1",
+    "storage_bucket": "myscholarship-62ea1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:440435878453:android:203fd02de65946cdde5f7c",
+        "android_client_info": {
+          "package_name": "com.examplekia.myscholarship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "440435878453-otsfisdgo9bc204sq18b66aljqn3dbs4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.examplekia.myscholarship",
+            "certificate_hash": "c3bb314b69a28737f9e58ae21808389cac10a0ef"
+          }
+        },
+        {
+          "client_id": "440435878453-k49thje1ovv2nk0bnedqjnr028bu04rg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXGuj0nGn_gUo-Yl_R-4ze1TJSqHgV9og"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "440435878453-k49thje1ovv2nk0bnedqjnr028bu04rg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

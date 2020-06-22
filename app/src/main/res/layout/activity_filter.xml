@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.scholarship.FilterActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_clear_black_24dp"
+            android:id="@+id/closeBtn_filter"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="상세조건"
+            style="@style/title_style"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="초기화"
+            android:textStyle="bold"
+            android:id="@+id/resetBtn_filter"
+            android:textColor="@color/background_gray"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_10"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="유형"
+                style="@style/title_small_style"
+                android:layout_marginBottom="15dp"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/scholarshipGroup_filter"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_10"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="운영기관"
+                style="@style/title_small_style"
+                android:layout_marginBottom="15dp"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/institutionGroup_filter"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/radius_10"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="장학금유형"
+                style="@style/title_small_style"
+                android:layout_marginBottom="15dp"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/scholarshipdGroup_filter"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radius_10"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/white">
+
+            <TextView
+                style="@style/title_small_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="학교" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/univGroup_filter"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_10"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="학년"
+                style="@style/title_small_style"
+                android:layout_marginBottom="15dp"/>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/gradeGroup_filter"/>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/applyBtn_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="적용하기"
+            android:background="@drawable/radius_20"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:elevation="2dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+<!--<TextView-->
+<!--style="@style/content_style"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="@drawable/radius_border_10"-->
+<!--android:paddingHorizontal="10dp"-->
+<!--android:paddingVertical="5dp"-->
+<!--android:layout_marginEnd="10dp"-->
+<!--android:text="대학교"-->
+<!--android:id="@+id/institution_Btn1"/>-->
+<!--<TextView-->
+<!--style="@style/content_style"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="@drawable/radius_border_10"-->
+<!--android:paddingHorizontal="10dp"-->
+<!--android:paddingVertical="5dp"-->
+<!--android:layout_marginEnd="10dp"-->
+<!--android:text="한국장학재단"-->
+<!--android:id="@+id/institution_Btn2"/>-->
+<!--<TextView-->
+<!--style="@style/content_style"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="@drawable/radius_border_10"-->
+<!--android:paddingHorizontal="10dp"-->
+<!--android:paddingVertical="5dp"-->
+<!--android:layout_marginEnd="10dp"-->
+<!--android:text="관계부처"-->
+<!--android:id="@+id/institution_Btn3"/>-->
+<!--<TextView-->
+<!--style="@style/content_style"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="@drawable/radius_border_10"-->
+<!--android:paddingHorizontal="10dp"-->
+<!--android:paddingVertical="5dp"-->
+<!--android:layout_marginEnd="10dp"-->
+<!--android:text="지자체"-->
+<!--android:id="@+id/institution_Btn4"/>-->
+<!--<TextView-->
+<!--style="@style/content_style"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:background="@drawable/radius_border_10"-->
+<!--android:paddingHorizontal="10dp"-->
+<!--android:paddingVertical="5dp"-->
+<!--android:layout_marginEnd="10dp"-->
+<!--android:text="민간(기업)"-->
+<!--android:id="@+id/institution_Btn5"/>-->

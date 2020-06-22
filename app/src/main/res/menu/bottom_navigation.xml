@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_scholarship"
+        android:enabled="true"
+        android:icon="@drawable/money"
+        android:title="장학금"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/action_support"
+        android:enabled="true"
+        android:icon="@drawable/book"
+        android:title="학생지원"/>
+    <item
+        android:id="@+id/action_dashboard"
+        android:enabled="true"
+        android:icon="@drawable/dashboard"
+        android:title="게시판"/>
+    <item
+        android:id="@+id/action_bookmark"
+        android:enabled="true"
+        android:icon="@drawable/heart"
+        android:title="즐겨찾기"/>
+
+    <item
+        android:id="@+id/action_mypage"
+        android:enabled="true"
+        android:icon="@drawable/user"
+        android:title="마이페이지"/>
+
+</menu>

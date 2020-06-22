@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">장학몬</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_key">P5pThUxFlhq9WgbVUacTrkmFQEQLzEOKjyHIzVLgAPHRuc79fx7W1abgUdFWgzZQXhJG7EIPCVveFHxNyW3bEA%3D%3D</string>
+
+    <string name="service_large1"></string>
+</resources>

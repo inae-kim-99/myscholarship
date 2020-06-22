@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_PINSTITUTION_D">
+        <item>대학교</item>
+        <item>한국장학재단</item>
+        <item>관계부처</item>
+        <item>지자체</item>
+        <item>민간(기업)</item>
+        <item>민간(기타)</item>
+    </string-array>
+
+    <string-array name="array_P_D">
+        <item>장학금</item>
+        <item>학자금</item>
+    </string-array>
+
+    <string-array name="array_PSCHOLARSHIP_D">
+        <item>소득구분</item>
+        <item>성적우수</item>
+        <item>지역연고</item>
+        <item>특기자</item>
+        <item>장애인</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="array_PUNIV_D">
+        <item>4년제(5~6년제포함)</item>
+        <item>전문대(2~3년제)</item>
+        <item>특정대학</item>
+        <item>일반대학원</item>
+        <item>전문대학원</item>
+        <item>학점은행제대학</item>
+        <item>해외대학</item>
+        <item>원격대학</item>
+        <item>기술대학</item>
+        <item>제한없음</item>
+    </string-array>
+
+    <string-array name="array_PGRADE_D">
+        <item>대학8학기이상</item>
+        <item>대학7학기</item>
+        <item>대학6학기</item>
+        <item>대학5학기</item>
+        <item>대학4학기</item>
+        <item>대학3학기</item>
+        <item>대학2학기</item>
+        <item>대학신입생</item>
+        <item>석사신입생(1학기)</item>
+        <item>석사2학기이상</item>
+        <item>박사과정</item>
+        <item>연령제한</item>
+        <item>제한없음</item>
+    </string-array>
+
+    <string-array name="array_PDEPART_D">
+        <item>특정학과</item>
+        <item>공학계열</item>
+        <item>교육계열</item>
+        <item>사회계열</item>
+        <item>인문계열</item>
+        <item>의약계열</item>
+        <item>자연계열</item>
+        <item>예체능계열</item>
+        <item>제한없음</item>
+    </string-array>
+
+    <string-array name="array_searchMenu">
+        <item>전체</item>
+        <item>장학금</item>
+        <item>운영기관</item>
+    </string-array>
+
+    <string-array name="array_searchServiceMenu">
+        <item>전체</item>
+        <item>제목</item>
+        <item>운영기관</item>
+    </string-array>
+
+    <string-array name="array_searchDashboardMenu">
+        <item>전체</item>
+        <item>제목</item>
+        <item>내용</item>
+    </string-array>
+</resources>
