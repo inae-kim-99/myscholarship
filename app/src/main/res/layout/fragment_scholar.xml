@@ -42,6 +42,7 @@
                 <EditText
                     android:id="@+id/searchEdit"
                     android:layout_width="match_parent"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:background="@null"
                     android:hint="검색어를 입력하세요"
@@ -50,26 +51,26 @@
                     android:paddingVertical="7dp"
                     android:singleLine="true"
                     android:textSize="13sp" />
-
+                <ImageView
+                    android:id="@+id/searchBtn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/search"
+                    android:backgroundTint="@color/table_text_color"
+                    />
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/searchBtn"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:layout_marginEnd="15dp"
-                android:src="@drawable/search"
-                android:background="@drawable/ripple_effect"
-                />
+
 
             <ImageView
                 android:id="@+id/filterBtn"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_marginEnd="10dp"
-                android:src="@drawable/equalizer"
-                android:background="@drawable/ripple_effect"
+                android:background="@drawable/equalizer"
+                android:backgroundTint="@color/table_text_color"
                 android:padding="2dp" />
         </LinearLayout>
 

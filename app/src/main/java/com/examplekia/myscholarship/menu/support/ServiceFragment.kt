@@ -1,12 +1,14 @@
 package com.examplekia.myscholarship.menu.support
 
 import android.app.ProgressDialog
+import android.content.Context
 import android.content.Intent
 import android.os.AsyncTask
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -14,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.examplekia.myscholarship.MyDBHelper
 import com.examplekia.myscholarship.R
 import com.examplekia.myscholarship.data.ServiceData
+import kotlinx.android.synthetic.main.fragment_scholar.*
 import kotlinx.android.synthetic.main.fragment_service.*
 import kotlinx.android.synthetic.main.fragment_service.searchBtn
 import kotlinx.android.synthetic.main.fragment_service.searchEdit
@@ -59,6 +62,8 @@ class ServiceFragment : Fragment() {
         //검색 버튼 클릭
         searchBtn.setOnClickListener {
             if(!searchEdit.text.isEmpty()){
+                val service = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                service.hideSoftInputFromWindow(searchEdit.windowToken,0)
                 MyAsyncTask2().execute()
 //                var searchText = searchEdit.text.toString()
 //                var tempList = arrayListOf<ServiceData>()

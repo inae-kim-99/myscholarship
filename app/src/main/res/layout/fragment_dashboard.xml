@@ -32,6 +32,7 @@
                     >
                     <EditText
                         android:layout_width="match_parent"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:id="@+id/searchEdit"
                         android:hint="글 제목을 입력하세요"
@@ -42,16 +43,24 @@
                         android:maxLength="20"
                         android:singleLine="true"
                         />
-
+                    <ImageView
+                        android:id="@+id/searchBtn"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/search"
+                        android:backgroundTint="@color/table_text_color"
+                        />
                 </LinearLayout>
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:id="@+id/searchBtn"
-                    android:src="@drawable/search"
-                    android:background="@drawable/ripple_effect"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="10dp" />
+<!--                <ImageView-->
+<!--                    android:layout_width="20dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:id="@+id/searchBtn"-->
+<!--                    android:src="@drawable/search"-->
+<!--                    android:background="@drawable/ripple_effect"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginEnd="10dp" />-->
             </LinearLayout>
             <View
                 android:layout_width="match_parent"

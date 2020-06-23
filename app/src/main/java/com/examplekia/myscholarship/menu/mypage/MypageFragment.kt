@@ -14,12 +14,12 @@ import android.widget.Toast
 
 import com.examplekia.myscholarship.R
 import com.examplekia.myscholarship.login.LoginActivity
+import com.examplekia.myscholarship.tutorial.TutorialActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.showtimetable.tutorial.TutorialActivity
 import kotlinx.android.synthetic.main.fragment_mypage.*
 
 /**
@@ -122,19 +122,19 @@ class MypageFragment : Fragment() {
         }
 
         //오픈소스 라이센스
-        lisenseBtn.setOnClickListener {
-            val builder = AlertDialog.Builder(requireContext())
-
-            builder.setTitle("오픈소스 라이센스")
-            val text = TextView(requireContext())
-
-            //text
-
-            builder.setView(text)
-        }
+//        lisenseBtn.setOnClickListener {
+//            val builder = AlertDialog.Builder(requireContext())
+//
+//            builder.setTitle("오픈소스 라이센스")
+//            val text = TextView(requireContext())
+//
+//            //text
+//
+//            builder.setView(text)
+//        }
 
         tutorialBtn.setOnClickListener {
-            val intent = Intent(requireContext(),TutorialActivity::class.java)
+            val intent = Intent(requireContext(), TutorialActivity::class.java)
             startActivity(intent)
         }
 

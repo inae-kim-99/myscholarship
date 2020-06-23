@@ -7,10 +7,10 @@ import android.widget.Toast
 import com.examplekia.myscholarship.MainActivity
 import com.examplekia.myscholarship.NetworkStatus
 import com.examplekia.myscholarship.R
+import com.examplekia.myscholarship.tutorial.TutorialActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.showtimetable.tutorial.TutorialActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val intent = Intent(this,TutorialActivity::class.java)
+        val intent = Intent(this, TutorialActivity::class.java)
         startActivity(intent)
 
         init()

@@ -1,11 +1,13 @@
 package com.examplekia.myscholarship.menu.dashboard
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 
@@ -14,6 +16,9 @@ import com.examplekia.myscholarship.data.DashboardData
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import kotlinx.android.synthetic.main.fragment_dashboard.searchBtn
+import kotlinx.android.synthetic.main.fragment_dashboard.searchEdit
+import kotlinx.android.synthetic.main.fragment_service.*
 
 /**
  * A simple [Fragment] subclass.
@@ -75,6 +80,8 @@ class DashboardFragment : Fragment() {
 
         //검색 버튼 클릭시
         searchBtn.setOnClickListener {
+            val service = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            service.hideSoftInputFromWindow(searchEdit.windowToken,0)
             if(findQuery)
                 findQueryAdapter()
             else{

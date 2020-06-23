@@ -2,7 +2,9 @@ package com.examplekia.myscholarship.menu.scholarship
 
 import android.app.Activity
 import android.app.ProgressDialog
+import android.content.Context
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.os.AsyncTask
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,13 +12,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.View.*
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.examplekia.myscholarship.MyDBHelper
 import com.examplekia.myscholarship.MyListAdapter
 
 import com.examplekia.myscholarship.R
 import com.examplekia.myscholarship.data.FilterData
+import kotlinx.android.synthetic.main.activity_board.*
 import kotlinx.android.synthetic.main.fragment_scholar.*
 import kotlinx.android.synthetic.main.fragment_scholar.recyclerView
 import kotlinx.android.synthetic.main.fragment_scholar.searchBtn
@@ -63,8 +69,10 @@ class ScholarFragment : Fragment() {
             startActivityForResult(intent,REQUEST_TEST)
         }
 
-        //검색 버튼 클릭시
+        //검색 버튼 클릭시`
         searchBtn.setOnClickListener {
+            val service = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            service.hideSoftInputFromWindow(searchEdit.windowToken,0)
             recyclerView.visibility = VISIBLE
             scholarship_empty.visibility = GONE
 
@@ -77,12 +85,13 @@ class ScholarFragment : Fragment() {
             //검색항목
             filterData.searchType = spinner_search.selectedItem.toString()
 
-            resultSearchList = myDBHelper.searchItems(filterData)
-            if(resultSearchList?.size == 0){
-                recyclerView.visibility = GONE
-                scholarship_empty.visibility = VISIBLE
-            }
-            recyclerView.adapter = MyListAdapter(resultSearchList,requireContext(),activity)
+//            resultSearchList = myDBHelper.searchItems(filterData)
+//            if(resultSearchList?.size == 0){
+//                recyclerView.visibility = GONE
+//                scholarship_empty.visibility = VISIBLE
+//            }
+//            recyclerView.adapter = MyListAdapter(resultSearchList,requireContext(),activity)
+            SearchAsyncTask().execute()
 
         }
 
@@ -105,6 +114,7 @@ class ScholarFragment : Fragment() {
                 filterData.pscholarshipd_list = filter.pscholarshipd_list
                 filterData.pgrade_list = filter.pgrade_list
                 filterData.puniv_list = filter.puniv_list
+                filterBtn.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(requireContext(),R.color.black))
             }
         }
 
@@ -148,8 +158,37 @@ class ScholarFragment : Fragment() {
         override fun onPostExecute(result: String?) {
             super.onPostExecute(result)
             progressDialog.dismiss()
-            //dataBtn.visibility = GONE
             recyclerView.visibility = VISIBLE
+        }
+    }
+
+    inner class SearchAsyncTask: AsyncTask<String, String, String>(){
+
+        var SearchList:ArrayList<String>? = arrayListOf<String>()//pnum
+        lateinit var progressDialog : ProgressDialog
+
+        override fun onPreExecute() {
+            super.onPreExecute()
+            progressDialog = ProgressDialog(context)
+            progressDialog.show()
+            progressDialog.setMessage("검색 중입니다 ...")
+        }
+
+        override fun doInBackground(vararg params: String?): String {
+            SearchList = myDBHelper.searchItems(filterData)
+            return "test"
+        }
+
+        override fun onPostExecute(result: String?) {
+            super.onPostExecute(result)
+
+            progressDialog.dismiss()
+
+            if(SearchList?.size == 0){
+                recyclerView.visibility = GONE
+                scholarship_empty.visibility = VISIBLE
+            }
+            recyclerView.adapter = MyListAdapter(SearchList,requireContext(),activity)
         }
     }
 

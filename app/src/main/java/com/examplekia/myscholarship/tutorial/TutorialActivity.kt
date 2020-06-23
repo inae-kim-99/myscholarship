@@ -1,4 +1,4 @@
-package com.showtimetable.tutorial
+package com.examplekia.myscholarship.tutorial
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,11 +18,11 @@ class TutorialActivity : AppCompatActivity() {
 
         exit.setOnClickListener {
             var index = viewpager.currentItem
-            if(index == 5){
+            if(index == 3){
                 finish()
             } else{
-                if(index == 4){
-                    exit.text = "장학몬 시작하기"
+                if(index == 2){
+                    exit.text = "장학몬 시작하기!"
                 }
                 viewpager.setCurrentItem(index + 1, true)
             }

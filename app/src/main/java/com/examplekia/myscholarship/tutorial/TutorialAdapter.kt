@@ -1,4 +1,4 @@
-package com.showtimetable.tutorial
+package com.examplekia.myscholarship.tutorial
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -24,7 +24,7 @@ class TutorialAdapter (var context: Context): RecyclerView.Adapter<TutorialAdapt
     }
 
     override fun getItemCount(): Int {
-        return 4
+        return page_list.size
     }
 
 

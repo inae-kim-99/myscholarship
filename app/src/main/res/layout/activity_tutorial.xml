@@ -7,12 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".tutorial.TutorialActivity"
     android:orientation="vertical"
-    android:background="@color/light_blue"
+    android:background="@color/colorPrimary"
     >
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="12dp"
+        android:layout_height="45dp"
         android:textSize="18dp"
         android:id="@+id/exit"
         android:text="다음"
@@ -26,8 +25,8 @@
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="45dp"
         />
 
     <me.relex.circleindicator.CircleIndicator3
