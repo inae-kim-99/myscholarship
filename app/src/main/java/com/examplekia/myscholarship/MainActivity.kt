@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
         serviceFragment= ServiceFragment()
         dashboardFragment= DashboardFragment()
         setFragment(0)
-        test()
+//        test()
     }
 
     private fun setFragment(n:Int){

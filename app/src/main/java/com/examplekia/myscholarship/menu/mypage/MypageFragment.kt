@@ -96,7 +96,7 @@ class MypageFragment : Fragment() {
                             for(item in p0.children){
                                 val rd = item.child("unickname").ref
                                 rd.setValue(edit.text.toString())
-                                nicknameText.text = edit.text.toString()
+                                nicknameText.text = "닉네임 : "+edit.text.toString()
                             }
                         }
                     })
