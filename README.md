@@ -24,4 +24,7 @@ Let's find a scholarship ❗
 
 ## App Screenshot
 <img src="https://user-images.githubusercontent.com/54172475/94286206-a6ad4180-ff8f-11ea-9420-515a4bc60ca8.png" width="300px"/> <img src="https://user-images.githubusercontent.com/54172475/94286210-a7de6e80-ff8f-11ea-9dae-aae0499a3c64.PNG" width="300px"/>
-<img src="https://user-images.githubusercontent.com/54172475/94286212-a8770500-ff8f-11ea-92f5-db7ae395a12d.PNG" width="300px"/> <img src="https://user-images.githubusercontent.com/54172475/94286213-a90f9b80-ff8f-11ea-97c1-86a7ecd47ffc.PNG" width="300px"/>  
+<img src="https://user-images.githubusercontent.com/54172475/94286212-a8770500-ff8f-11ea-92f5-db7ae395a12d.PNG" width="300px"/> <img src="https://user-images.githubusercontent.com/54172475/94286213-a90f9b80-ff8f-11ea-97c1-86a7ecd47ffc.PNG" width="300px"/>
+
+## Google Play Store
+https://play.google.com/store/apps/details?id=com.examplekia.myscholarship
