@@ -27,5 +27,5 @@ Let's find a scholarship ❗
 <img src="https://user-images.githubusercontent.com/54172475/94286212-a8770500-ff8f-11ea-92f5-db7ae395a12d.PNG" width="300px"/> <img src="https://user-images.githubusercontent.com/54172475/94286213-a90f9b80-ff8f-11ea-97c1-86a7ecd47ffc.PNG" width="300px"/>
 
 ## Google Play Store
-download this app 😍
+download this app 😍  
 https://play.google.com/store/apps/details?id=com.examplekia.myscholarship
