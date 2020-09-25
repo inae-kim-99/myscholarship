@@ -1,7 +1,7 @@
 <img src="https://user-images.githubusercontent.com/54172475/94280975-06541e80-ff89-11ea-80c2-7c17459dd067.png" width="100px"/>
 
 # myscholarship
-Let's find a scholarship!
+Let's find a scholarship ❗
 
 ## Introduction
 <img src="https://user-images.githubusercontent.com/54172475/94287269-09530d00-ff91-11ea-92e2-aad4d66f857d.png" width="25px"/>&nbsp;  This is an android application for college students who want to find a scholarship.
