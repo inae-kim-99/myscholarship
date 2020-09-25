@@ -1,4 +1,5 @@
-<img src="https://user-images.githubusercontent.com/54172475/94280975-06541e80-ff89-11ea-80c2-7c17459dd067.png" width="48">
+<img src="https://user-images.githubusercontent.com/54172475/94280975-06541e80-ff89-11ea-80c2-7c17459dd067.png" width="48"/>  
+
 # myscholarship
 
 ## Introduction
