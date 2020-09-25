@@ -3,7 +3,7 @@
 # myscholarship
 
 ## Introduction
-This is an android application for college students who want to find a scholarship.
+<img src="https://user-images.githubusercontent.com/54172475/94287269-09530d00-ff91-11ea-92e2-aad4d66f857d.png" width="300px"/> This is an android application for college students who want to find a scholarship.
 1. :clipboard: It shows all scholarships.
 2. :mag_right: You can set detailed qualification for scholarship and can find items easily.
 3. :heartpulse: You can register an item as a favorite.
